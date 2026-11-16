@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="20" viewBox="0 0 48 20" fill="none">
+  <!-- Cuerda trenzada original (referencia). En el sitio se dibuja desde js/main.js
+       con los colores de las variables --cuerda-borde y --cuerda-relleno. -->
+  <defs><clipPath id="r"><rect x="24" width="24" height="20"/></clipPath></defs>
+  <path d="M0 16C12 16 12 4 24 4S36 16 48 16" stroke="#111111" stroke-width="6"/>
+  <path d="M0 16C12 16 12 4 24 4S36 16 48 16" stroke="#FFFFFF" stroke-width="3.5"/>
+  <path d="M0 4C12 4 12 16 24 16S36 4 48 4" stroke="#111111" stroke-width="6"/>
+  <path d="M0 4C12 4 12 16 24 16S36 4 48 4" stroke="#FFFFFF" stroke-width="3.5"/>
+  <g clip-path="url(#r)">
+    <path d="M0 16C12 16 12 4 24 4S36 16 48 16" stroke="#111111" stroke-width="6"/>
+    <path d="M0 16C12 16 12 4 24 4S36 16 48 16" stroke="#FFFFFF" stroke-width="3.5"/>
+  </g>
+</svg>

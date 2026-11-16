@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <rect width="800" height="1000" fill="#D6D3CB"/>
+  <path d="M0 1000 L0 650 L240 400 L440 620 L600 480 L800 660 L800 1000 Z" fill="#111111" opacity=".18"/>
+  <text x="50%" y="30%" fill="#111111" font-family="Arial, sans-serif" font-size="42" text-anchor="middle">Foto 4:5 · reemplazar</text>
+</svg>
