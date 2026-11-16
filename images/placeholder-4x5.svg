@@ -1,5 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
-  <rect width="800" height="1000" fill="#D6D3CB"/>
-  <path d="M0 1000 L0 650 L240 400 L440 620 L600 480 L800 660 L800 1000 Z" fill="#111111" opacity=".18"/>
-  <text x="50%" y="30%" fill="#111111" font-family="Arial, sans-serif" font-size="42" text-anchor="middle">Foto 4:5 · reemplazar</text>
+  <!-- Placeholder 4:5 — reemplazar por foto real -->
+  <rect width="800" height="1000" fill="#111111"/>
+  <path d="M0 580 L176 300 L360 520 L544 240 L800 500 L800 1000 L0 1000 Z" fill="#EEEDE9" opacity=".10"/>
+  <path d="M0 720 L240 500 L440 700 L640 480 L800 660 L800 1000 L0 1000 Z" fill="#EEEDE9" opacity=".16"/>
+  <path d="M0 860 Q200 780 400 860 T800 840 L800 1000 L0 1000 Z" fill="#EEEDE9" opacity=".22"/>
+  <circle cx="624" cy="180" r="40" fill="#C9B32A" opacity=".55"/>
+  <text x="32" y="940" fill="#EEEDE9" opacity=".7" font-family="Arial, sans-serif" font-size="24">Foto 4:5 · reemplazar</text>
 </svg>

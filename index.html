@@ -1,22 +1,19 @@
 <!doctype html>
-<html lang="es-CO" data-root="" data-page="index.html" data-wa-msg="Hola, vengo del sitio web y quiero información.">
+<html lang="es-CO" data-root="" data-page="index.html" data-wa-msg="general">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Casa Hostal Amor Viajero · Río Cañas, San Francisco, Cundinamarca</title>
-  <meta name="description" content="Glamping, habitaciones, cabañas, camping, río, cuatrimotos y restaurante en Río Cañas, San Francisco (Cundinamarca), a 1 hora de Bogotá. Escríbenos por WhatsApp.">
+  <title>Casa Hostal Amor Viajero · Glamping y naturaleza a 1 hora de Bogotá</title>
+  <meta name="description" content="Glamping, habitaciones, camping y casas rodantes en Río Cañas, San Francisco (Cundinamarca), a 1 hora de Bogotá. Río, cuatrimotos, pasadía y restaurante.">
   <meta name="theme-color" content="#111111">
   <link rel="icon" href="images/logo-sello-oscuro.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap">
-  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=ranade@700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
-
-  <!-- Header: lo genera js/main.js -->
   <div data-include="header"></div>
 
   <main id="contenido">
@@ -26,140 +23,198 @@
       <picture class="hero__media">
         <source media="(min-width: 48em)" srcset="images/placeholder-16x9.svg" width="1600" height="900">
         <img src="images/placeholder-4x5.svg" width="800" height="1000" fetchpriority="high"
-             alt="Domo de glamping en madera rodeado de montañas verdes en Río Cañas">
+             alt="Domo de glamping en madera entre montañas verdes, con el río al fondo">
       </picture>
       <div class="hero__contenido contenedor">
-        <p class="eyebrow hero__ubicacion">Río Cañas · San Francisco, Cundinamarca · a 1 hora de Bogotá</p>
+        <p class="eyebrow hero__ubicacion" data-cfg="ubicacion">Vereda El Peñón · Río Cañas, San Francisco, Cundinamarca, a 1 hora de Bogotá</p>
         <h1 id="hero-titulo" class="titulo-xl">Glamping, río y <span>montaña</span></h1>
-        <a class="btn btn--whatsapp" href="contacto/whatsapp.html"
-           data-wa="Hola, vengo del sitio web y quiero información para visitarlos.">Escríbenos por WhatsApp</a>
+        <a class="btn btn--primary btn--grande" href="#alojamiento">Reserva aquí</a>
       </div>
     </section>
 
-    <!-- ============ 2. QUÉ OFRECEMOS ============ -->
-    <section class="seccion" aria-labelledby="ofrecemos-titulo">
+    <!-- ============ 2. FRANJA AMARILLA ============ -->
+    <aside class="franja" aria-label="Promoción">
+      <p class="contenedor">Entre semana: tarifa especial en todos los alojamientos</p>
+    </aside>
+
+    <!-- ============ 3. ALOJAMIENTO (piedra) ============ -->
+    <section class="seccion" id="alojamiento" aria-labelledby="alojamiento-titulo">
       <div class="contenedor">
         <header class="seccion__cabecera">
-          <p class="eyebrow">Alojamiento y experiencias</p>
-          <h2 id="ofrecemos-titulo">Qué ofrecemos</h2>
+          <p class="eyebrow">Dónde dormir</p>
+          <h2 id="alojamiento-titulo">Alojamiento</h2>
         </header>
-        <!-- Cada tarjeta enlaza a su página. Para editar: cambiar imagen, texto y href. -->
         <ul class="cards">
-          <li class="card--destacada"><a class="card" href="alojamiento/glamping.html">
-            <img class="card__img" src="images/placeholder-4x3.svg" width="800" height="600" loading="lazy" alt="Domo de madera del glamping con su terraza">
-            <div class="card__body"><span class="card__tag">Alojamiento</span><h3>Glamping</h3><p>Domo de madera.</p></div>
+          <li><a class="card" href="#glamping">
+            <img class="card__img" src="images/placeholder-4x3.svg" width="800" height="600" loading="lazy" alt="Domo de madera y globos de glamping al atardecer">
+            <div class="card__body">
+              <span class="card__tag">Domo y globos</span>
+              <h3>Glamping</h3>
+              <p class="precio" data-precio="glamping"></p>
+              <span class="card__mas">Ver glamping</span>
+            </div>
           </a></li>
           <li><a class="card" href="alojamiento/habitaciones.html">
-            <img class="card__img" src="images/placeholder-4x3.svg" width="800" height="600" loading="lazy" alt="Habitación de la casa hostal">
-            <div class="card__body"><span class="card__tag">Alojamiento</span><h3>Habitaciones</h3></div>
-          </a></li>
-          <li><a class="card" href="alojamiento/cabanas.html">
-            <img class="card__img" src="images/placeholder-4x3.svg" width="800" height="600" loading="lazy" alt="Cabaña rodeada de vegetación">
-            <div class="card__body"><span class="card__tag">Alojamiento</span><h3>Cabañas</h3></div>
+            <img class="card__img" src="images/placeholder-4x3.svg" width="800" height="600" loading="lazy" alt="Habitación del hotel con cama doble y ventana hacia la montaña">
+            <div class="card__body">
+              <span class="card__tag">En la casa</span>
+              <h3>Habitaciones del hotel</h3>
+              <p class="precio" data-precio="habitaciones"></p>
+              <span class="card__mas">Ver habitaciones</span>
+            </div>
           </a></li>
           <li><a class="card" href="alojamiento/camping.html">
-            <img class="card__img" src="images/placeholder-4x3.svg" width="800" height="600" loading="lazy" alt="Zona de camping con carpas y una casa rodante">
-            <div class="card__body"><span class="card__tag">Alojamiento</span><h3>Camping y casas rodantes</h3></div>
-          </a></li>
-          <li><a class="card" href="experiencias/rio.html">
-            <img class="card__img" src="images/placeholder-4x3.svg" width="800" height="600" loading="lazy" alt="Río Cañas entre piedras y árboles">
-            <div class="card__body"><span class="card__tag">Experiencia</span><h3>Río</h3></div>
-          </a></li>
-          <li><a class="card" href="experiencias/cuatrimotos.html">
-            <img class="card__img" src="images/placeholder-4x3.svg" width="800" height="600" loading="lazy" alt="Cuatrimotos en un camino destapado">
-            <div class="card__body"><span class="card__tag">Experiencia</span><h3>Cuatrimotos</h3></div>
-          </a></li>
-          <li><a class="card" href="experiencias/restaurante.html">
-            <img class="card__img" src="images/placeholder-4x3.svg" width="800" height="600" loading="lazy" alt="Plato servido en el restaurante del hostal">
-            <div class="card__body"><span class="card__tag">Experiencia</span><h3>Restaurante</h3></div>
+            <img class="card__img" src="images/placeholder-4x3.svg" width="800" height="600" loading="lazy" alt="Zona de camping con carpas y una casa rodante bajo los árboles">
+            <div class="card__body">
+              <span class="card__tag">Al aire libre</span>
+              <h3>Camping y casas rodantes</h3>
+              <p class="precio" data-precio="camping"></p>
+              <span class="card__mas">Ver camping</span>
+            </div>
           </a></li>
         </ul>
-        <p class="seccion__pie"><a class="enlace-flecha" href="experiencias/pasadia.html">¿Vienes solo por el día? Mira el pasadía</a></p>
+        <p class="precios-nota" data-precios-nota>Precios de referencia, confirma por WhatsApp</p>
+        <p class="nota-van"><strong>¿Viajas en van?</strong> Tienes un espacio en la casa.</p>
+        <!-- Descuento opcional: se activa en js/config.js (descuento.activo) -->
+        <p class="descuento" data-descuento></p>
       </div>
     </section>
 
-    <div class="divisor" aria-hidden="true"></div>
+    <!-- ============ 4. GLAMPING (negro, cuerda blanca arriba) ============ -->
+    <section class="seccion seccion--negro seccion--con-cuerda" id="glamping" aria-labelledby="glamping-titulo">
+      <div class="divisor divisor--oscuro" aria-hidden="true"></div>
+      <div class="contenedor glamping">
+        <img class="glamping__foto" src="images/placeholder-4x5.svg" width="800" height="1000" loading="lazy"
+             alt="Domo de madera del glamping visto desde afuera, rodeado de naturaleza">
+        <div>
+          <span class="etiqueta">Alojamiento alternativo</span>
+          <h2 id="glamping-titulo">Glamping</h2>
+          <p class="lead">Un concepto de alojamiento que viajeros, parejas aventureras y familias han elegido en los últimos años. Diferentes experiencias en un mismo lugar.</p>
+          <ul class="sellos" aria-label="Ideal para">
+            <li>Parejas</li>
+            <li>Familias</li>
+            <li>Viajeros aventureros</li>
+          </ul>
+          <ul class="avisos">
+            <li>Este mes sorteamos una noche mágica entre nuestros seguidores. <span class="por-confirmar">[por confirmar si sigue vigente]</span></li>
+            <li>Entre semana: decoración de cortesía (<a href="#" data-cfg-href="terminos">aplican T&amp;C</a>).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="contenedor glamping__tipos">
+        <article class="card">
+          <img class="card__img" src="images/placeholder-4x3.svg" width="800" height="600" loading="lazy" alt="Interior del glamping domo de madera">
+          <div class="card__body">
+            <h3>Glamping domo de madera</h3>
+            <p><span class="por-confirmar">[por confirmar descripción, capacidad y precio]</span></p>
+            <a class="btn btn--whatsapp" href="contacto/whatsapp.html" data-wa="glampingDomo">Reservar domo</a>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__img" src="images/placeholder-4x3.svg" width="800" height="600" loading="lazy" alt="Glamping globos iluminado de noche">
+          <div class="card__body">
+            <h3>Glamping globos</h3>
+            <p><span class="por-confirmar">[por confirmar descripción, capacidad y precio]</span></p>
+            <a class="btn btn--whatsapp" href="contacto/whatsapp.html" data-wa="glampingGlobos">Reservar globos</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <!-- ============ 3. PROMOCIÓN ============ -->
-    <section class="seccion seccion--amarillo" aria-labelledby="promo-titulo">
+    <!-- ============ 5. ACTIVIDADES (piedra) ============
+         Íconos: Tabler Icons 3.31.0 outline (ripple, motorbike, sun, tools-kitchen-2), en línea.
+         Cada tarjeta abre WhatsApp con su mensaje (data-wa). Para enlazar a la página, borrar data-wa. -->
+    <div class="divisor" aria-hidden="true"></div>
+    <section class="seccion" aria-labelledby="actividades-titulo">
       <div class="contenedor">
         <header class="seccion__cabecera">
-          <p class="eyebrow">Promoción</p>
-          <h2 id="promo-titulo">Tarifa especial entre semana</h2>
-          <p class="lead">En todos los alojamientos.</p>
+          <p class="eyebrow">Actividades</p>
+          <h2 id="actividades-titulo">¿Qué puedes hacer aquí?</h2>
         </header>
-        <ul class="promo__lista">
-          <li><strong>Tarifa entre semana</strong><p>Aplica en glamping, habitaciones, cabañas y camping. Días y valor: <span class="por-confirmar">[por confirmar]</span>.</p></li>
-          <li><strong>Sorteo del mes</strong><p>Cada mes sorteamos una noche de alojamiento. Cómo participar: <span class="por-confirmar">[por confirmar]</span>.</p></li>
-          <li><strong>Decoración de cortesía</strong><p>Para reservas entre semana.</p></li>
+        <ul class="actividades">
+          <li><a class="actividad" href="experiencias/rio.html" data-wa="rio">
+            <svg class="actividad__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7c3 -2 6 -2 9 0s6 2 9 0"/><path d="M3 17c3 -2 6 -2 9 0s6 2 9 0"/><path d="M3 12c3 -2 6 -2 9 0s6 2 9 0"/></svg>
+            <h3>Río</h3>
+            <p>Sonido del río y plan de día</p>
+          </a></li>
+          <li><a class="actividad" href="experiencias/cuatrimotos.html" data-wa="cuatrimotos">
+            <svg class="actividad__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 16m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/><path d="M19 16m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/><path d="M7.5 14h5l4 -4h-10.5m1.5 4l4 -4"/><path d="M13 6h2l1.5 3l2 4"/></svg>
+            <h3>Cuatrimotos</h3>
+            <p>Paseos por el entorno</p>
+            <span class="por-confirmar">[por confirmar recorridos y precio]</span>
+          </a></li>
+          <li><a class="actividad" href="experiencias/pasadia.html" data-wa="pasadia">
+            <svg class="actividad__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"/></svg>
+            <h3>Pasadía</h3>
+            <p>Un día para desconectarte</p>
+            <span class="por-confirmar">[por confirmar qué incluye]</span>
+          </a></li>
+          <li><a class="actividad" href="experiencias/restaurante.html" data-wa="restaurante">
+            <svg class="actividad__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 3v12h-5c-.023 -3.681 .184 -7.406 5 -12zm0 12v6h-1v-3m-10 -14v17m-3 -17v3a3 3 0 1 0 6 0v-3"/></svg>
+            <h3>Restaurante</h3>
+            <p>Sabores de la casa</p>
+            <span class="por-confirmar">[por confirmar menú]</span>
+          </a></li>
         </ul>
-        <a class="btn btn--whatsapp" href="contacto/whatsapp.html"
-           data-wa="Hola, quiero información de la tarifa especial entre semana para el [fecha].">Pregunta por la tarifa</a>
-        <!-- TODO: reemplazar href por la página real de términos y condiciones -->
-        <p class="promo__tyc">*Aplican términos y condiciones. <a href="#tyc-por-confirmar">Ver T&amp;C</a> <span class="por-confirmar">[enlace por confirmar]</span></p>
       </div>
     </section>
 
-    <!-- ============ 4. EVENTOS ============ -->
-    <section class="seccion seccion--madera-clara" aria-labelledby="eventos-titulo">
+    <!-- ============ 6. EVENTOS (negro) ============ -->
+    <section class="seccion seccion--negro seccion--con-cuerda" aria-labelledby="eventos-titulo">
+      <div class="divisor divisor--oscuro" aria-hidden="true"></div>
       <div class="contenedor">
         <header class="seccion__cabecera">
           <p class="eyebrow">Agenda</p>
           <h2 id="eventos-titulo">Eventos en el hostal</h2>
-          <p class="lead">Organizamos eventos con frecuencia: teatro, shows y celebraciones.</p>
+          <p class="lead">Hacemos eventos con frecuencia: teatro, shows y celebraciones.</p>
         </header>
         <div class="eventos">
-          <!-- Próximo evento: duplicar este <article> por cada evento de la agenda -->
+          <!-- Duplicar este <article> por cada evento de la agenda -->
           <article class="card evento">
-            <img class="card__img" src="images/placeholder-16x9.svg" width="1600" height="900" loading="lazy" alt="Afiche del próximo evento">
+            <img class="card__img" src="images/placeholder-16x9.svg" width="1600" height="900" loading="lazy" alt="Afiche del próximo evento en el hostal">
             <div class="card__body">
-              <span class="card__tag">Próximo</span>
-              <h3>Próximo evento <span class="por-confirmar">[por confirmar]</span></h3>
+              <span class="card__tag">Próximo evento</span>
+              <h3><span class="por-confirmar">[por confirmar]</span></h3>
               <p>Fecha: <span class="por-confirmar">[por confirmar]</span></p>
-              <a class="btn btn--whatsapp" href="contacto/whatsapp.html"
-                 data-wa="Hola, quiero información del próximo evento.">Quiero ir</a>
             </div>
           </article>
-          <article class="card evento evento--pasado">
+          <article class="card evento">
             <img class="card__img" src="images/placeholder-16x9.svg" width="1600" height="900" loading="lazy" alt="Familias viendo la obra de teatro del Día de la Madre en el hostal">
             <div class="card__body">
               <span class="card__tag">Último evento</span>
               <h3>Día de la Madre</h3>
               <p>Obra de teatro familiar y show de talentos locales.</p>
-              <a class="enlace-flecha" href="eventos/archivo.html">Ver eventos pasados</a>
             </div>
           </article>
         </div>
-        <p class="seccion__pie"><a class="enlace-flecha" href="eventos/agenda.html">Ver agenda completa</a></p>
+        <p class="seccion__pie"><a class="btn btn--primary" href="eventos/index.html">Ver eventos</a></p>
       </div>
     </section>
 
+    <!-- ============ 7. TIKTOK Y REELS (piedra) ============
+         Para insertar un video: reemplazar el contenido de un <li class="video"> por el código de TikTok o Instagram. -->
     <div class="divisor" aria-hidden="true"></div>
-
-    <!-- ============ 5. TIKTOK Y REELS ============ -->
-    <section class="seccion seccion--oscura seccion--negro" aria-labelledby="videos-titulo">
+    <section class="seccion" aria-labelledby="videos-titulo">
       <div class="contenedor">
         <header class="seccion__cabecera">
           <p class="eyebrow">#AmorViajero</p>
           <h2 id="videos-titulo">TikTok y Reels</h2>
         </header>
-        <!-- Para insertar un video: reemplazar el contenido de un <li class="video">
-             por el código de inserción de TikTok o Instagram. -->
         <ul class="videos" tabindex="0" aria-label="Videos de TikTok e Instagram (desliza para ver más)">
-          <li class="video">Video de TikTok<small>Espacio para insertar</small></li>
-          <li class="video">Reel de Instagram<small>Espacio para insertar</small></li>
-          <li class="video">Video de TikTok<small>Espacio para insertar</small></li>
-          <li class="video">Reel de Instagram<small>Espacio para insertar</small></li>
+          <li class="video">TikTok<small>Espacio para insertar video</small></li>
+          <li class="video">Reel<small>Espacio para insertar video</small></li>
+          <li class="video">TikTok<small>Espacio para insertar video</small></li>
+          <li class="video">Reel<small>Espacio para insertar video</small></li>
         </ul>
         <div class="redes">
-          <a class="btn btn--primary" id="btn-instagram" href="#">Instagram</a>
-          <a class="btn btn--primary" id="btn-tiktok" href="#">TikTok</a>
+          <a class="btn btn--dark" href="#" data-cfg-href="instagram">Instagram</a>
+          <a class="btn btn--dark" href="#" data-cfg-href="tiktok">TikTok</a>
         </div>
       </div>
     </section>
 
-    <!-- ============ 6. PREGUNTAS RÁPIDAS ============ -->
-    <section class="seccion" aria-labelledby="faq-titulo">
+    <!-- ============ 8. PREGUNTAS RÁPIDAS (blanco) ============ -->
+    <section class="seccion seccion--blanco" aria-labelledby="faq-titulo">
       <div class="contenedor">
         <header class="seccion__cabecera">
           <p class="eyebrow">Antes de escribirnos</p>
@@ -168,90 +223,52 @@
         <div class="faq">
           <details>
             <summary>¿Qué tan lejos queda del pueblo?</summary>
-            <div class="faq__respuesta">
-              <p>Estamos en Río Cañas, San Francisco (Cundinamarca). Distancia y tiempo al casco urbano: <span class="por-confirmar">[por confirmar]</span>.</p>
-            </div>
+            <div class="faq__respuesta"><p>Distancia y tiempo desde San Francisco: <span class="por-confirmar">[por confirmar]</span></p></div>
           </details>
           <details>
             <summary>¿Ofrecen pasadía?</summary>
-            <div class="faq__respuesta">
-              <p>Sí. Qué incluye, horario y valor: <span class="por-confirmar">[por confirmar]</span>.</p>
-              <p><a class="enlace-flecha" href="contacto/whatsapp.html" data-wa="Hola, quiero información del pasadía para el [fecha].">Preguntar por el pasadía</a></p>
-            </div>
+            <div class="faq__respuesta"><p>Sí. Qué incluye, horario y valor: <span class="por-confirmar">[por confirmar]</span></p></div>
           </details>
           <details>
             <summary>¿Cómo llego desde Bogotá?</summary>
-            <div class="faq__respuesta">
-              <p>Estamos a 1 hora de Bogotá. Ruta e indicaciones: <span class="por-confirmar">[por confirmar]</span>.</p>
-              <p><a class="enlace-flecha" href="contacto/como-llegar.html">Cómo llegar</a></p>
-            </div>
+            <div class="faq__respuesta"><p>Estamos a 1 hora de Bogotá, en Río Cañas (San Francisco, Cundinamarca). Ruta: <span class="por-confirmar">[por confirmar]</span></p></div>
           </details>
           <details>
             <summary>¿En qué horario responden por WhatsApp?</summary>
-            <div class="faq__respuesta">
-              <p>Horario de atención: <span class="por-confirmar" data-cfg="horarioAtencion">[por confirmar]</span>.</p>
-            </div>
+            <div class="faq__respuesta"><p>Horario de atención: <span class="por-confirmar" data-cfg="horarioAtencion">[por confirmar]</span></p></div>
           </details>
         </div>
         <p class="seccion__pie"><a class="enlace-flecha" href="contacto/preguntas-frecuentes.html">Ver todas las preguntas frecuentes</a></p>
       </div>
     </section>
 
-    <div class="divisor" aria-hidden="true"></div>
-
-    <!-- ============ 7. CIERRE ============ -->
-    <section class="seccion seccion--oscura seccion--negro" aria-labelledby="cierre-titulo">
+    <!-- ============ 9. CIERRE (negro) ============ -->
+    <section class="seccion seccion--negro" aria-labelledby="cierre-titulo">
       <div class="contenedor cierre">
-        <div class="cierre__datos">
+        <div>
           <p class="eyebrow">Te esperamos</p>
           <h2 id="cierre-titulo">Escríbenos y planea tu visita</h2>
-          <p>Río Cañas · San Francisco, Cundinamarca · a 1 hora de Bogotá</p>
+          <p data-cfg="ubicacion">Vereda El Peñón · Río Cañas, San Francisco, Cundinamarca, a 1 hora de Bogotá</p>
+          <p><span class="por-confirmar" data-cfg="ubicacionPendiente">[por confirmar nombre exacto de la vereda]</span></p>
           <p>Horario de atención: <span class="por-confirmar" data-cfg="horarioAtencion">[por confirmar]</span></p>
-          <p><a href="contacto/como-llegar.html">Cómo llegar</a></p>
+          <div class="cierre__acciones">
+            <a class="btn btn--whatsapp btn--grande" href="contacto/whatsapp.html" data-wa="general">Escríbenos por WhatsApp</a>
+            <a class="btn btn--dark" href="#" data-cfg-href="googleMaps">Abrir en Google Maps</a>
+          </div>
         </div>
-
-        <!-- Formulario que arma un mensaje con contexto y abre WhatsApp (no envía datos a ningún servidor) -->
-        <form class="card form-wa" data-wa-form>
-          <h3>Arma tu mensaje</h3>
-          <div class="campo">
-            <label for="f-interes">¿Qué te interesa?</label>
-            <select id="f-interes" name="interes">
-              <option value="reservar glamping">Glamping</option>
-              <option value="reservar una habitación">Habitaciones</option>
-              <option value="reservar una cabaña">Cabañas</option>
-              <option value="información de camping y casas rodantes">Camping y casas rodantes</option>
-              <option value="información del pasadía">Pasadía</option>
-              <option value="información de los eventos">Eventos</option>
-              <option value="hacer una consulta">Otra consulta</option>
-            </select>
-          </div>
-          <div class="campos-fila">
-            <div class="campo">
-              <label for="f-fecha">Fecha</label>
-              <input id="f-fecha" name="fecha" type="date">
-            </div>
-            <div class="campo">
-              <label for="f-personas">Personas</label>
-              <input id="f-personas" name="personas" type="number" min="1" max="99" inputmode="numeric">
-            </div>
-          </div>
-          <p class="campo__ayuda">Fecha y personas son opcionales.</p>
-          <output class="form-wa__vista" data-wa-preview for="f-interes f-fecha f-personas" aria-live="polite"></output>
-          <button class="btn btn--whatsapp" type="submit">Enviar por WhatsApp</button>
-        </form>
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.8592957705127!2d-74.2895259!3d4.9630482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e408798d2a41975%3A0x781eba7c51260d02!2sCASA%20HOSTAL%20AMOR%20VIAJERO!5e0!3m2!1ses!2sco!4v1794866433440!5m2!1ses!2sco"
+                  width="800" height="600" style="border:0;" allowfullscreen loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  title="Mapa de ubicación de Casa Hostal Amor Viajero"></iframe>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer: lo genera js/main.js -->
   <div data-include="footer"></div>
 
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
-  <script>
-    // Botones de redes en la Home (URLs en config.js)
-    document.getElementById('btn-instagram').href = AMOR_VIAJERO.redes.instagram;
-    document.getElementById('btn-tiktok').href = AMOR_VIAJERO.redes.tiktok;
-  </script>
 </body>
 </html>
